@@ -11,11 +11,15 @@ preexec () { echo -ne "\e[0m" }
 
 alias sshs="ssh root@220.240.178.216"
 alias server="ssh root@220.240.178.216"
-alias f="yarn dev"
-alias u="yarn upgrade"
+alias f="bun dev"
+alias u="bun update"
 alias y="yarn"
+alias yu="yarn upgrade"
+alias m="bun install"
+alias p="prettier ./src --write"
+alias pb="prettier ./ --write"
 alias i="npm i"
-alias l="yarn lint"
+alias l="bun lint"
 alias b="nodemon"
 alias db="ssh -L 3306:127.0.0.1:3306 root@220.240.178.216"
 alias vpn="./vpn"
@@ -32,3 +36,4 @@ alias pwr="sudo powermetrics -i 2000 --samplers cpu_power -a --hide-cpu-duty-cyc
 alias nr="npm run"
 alias in="brew install"
 alias bu="brew upgrade"
+
