@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export PATH="/opt/homebrew/opt/node/bin:$PATH"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -20,6 +20,7 @@ alias p="prettier ./src --write"
 alias pb="prettier ./ --write"
 alias i="npm i"
 alias l="bun lint"
+alias ygen="bun install -y"
 alias b="nodemon"
 alias db="ssh -L 3306:127.0.0.1:3306 root@220.240.178.216"
 alias vpn="./vpn"
@@ -34,6 +35,7 @@ alias webstorm="open -na "WebStorm.app" --args"
 alias smart="smartctl -a /dev/disk0"
 alias pwr="sudo powermetrics -i 2000 --samplers cpu_power -a --hide-cpu-duty-cycle"
 alias nr="npm run"
+alias ag="./apollo-ios-cli generate"
 alias in="brew install"
 alias bu="brew upgrade"
 
