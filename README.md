@@ -1,3 +1,3 @@
 # Runcom config files
 
-My Zsh and other runcom config files
+My Zsh and other rc(runcom) config files
