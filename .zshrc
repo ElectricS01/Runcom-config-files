@@ -33,6 +33,10 @@ alias i="npm i"
 alias nr="npm run"
 alias b="nodemon"
 
+alias q="cargo run"
+alias a="cargo new"
+alias e="vim src/main.rs"
+
 alias vpn="./vpn"
 alias v="./vpn-new"
 alias vpns="./vpn-server"
