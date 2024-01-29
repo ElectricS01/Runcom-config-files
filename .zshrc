@@ -35,6 +35,7 @@ alias b="nodemon"
 
 alias q="cargo run"
 alias a="cargo new"
+alias s="cargo add"
 alias e="vim src/main.rs"
 
 alias vpn="./vpn"
