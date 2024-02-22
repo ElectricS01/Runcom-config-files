@@ -1,0 +1,18 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = ElectricS01
+	email = 103579308+ElectricS01@users.noreply.github.com
+	signingkey = ~/.ssh/github_key.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+[diff "lockb"]
+	textconv = bun
+	binary = true
