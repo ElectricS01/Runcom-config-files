@@ -1,4 +1,5 @@
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -43,8 +44,8 @@ alias v="./vpn-new"
 alias vpns="./vpn-server"
 
 alias mdb="mysql.server start"
-alias gen="sequelize migration:generate --name"
-alias mig="sequelize db:migrate"
+alias gen="bun sequelize migration:generate --name"
+alias mig="bun sequelize db:migrate"
 
 alias sl="sudo pmset -a disablesleep"
 alias t="sudo-touchid"
