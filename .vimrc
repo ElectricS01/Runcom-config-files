@@ -1,3 +1,7 @@
+execute pathogen#infect()
+
+" file detection
+filetype on
 " syntax highlighting
 syntax on
 
@@ -30,3 +34,9 @@ endfunction
 
 nnoremap <Plug>unimpairedBlankUp :call BlankUp(v:count1)<CR>
 nnoremap <Plug>unimpairedBlankDown :call BlankDown(v:count1)<CR>
+
+" toggle Tagbar
+nnoremap <silent> <F8> :TagbarToggle<CR>
+
+" open Tagbar in Rust files
+autocmd FileType rust TagbarOpen
