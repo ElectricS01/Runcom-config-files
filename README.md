@@ -2,10 +2,10 @@
 
 My Zsh and other rc(runcom) config files
 
-### `~/`
+`~/`
 - .zshrc
 - .vimrc
 - .gitconfig
 
-### `~/library/LaunchAgents/
+`~/library/LaunchAgents/`
 - com.local.KeyRemapping.plist
