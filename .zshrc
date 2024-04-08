@@ -4,6 +4,10 @@ PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=50000
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 setopt SHARE_HISTORY
 autoload -U colors && colors
 PS1="%F{46}%n%F{160}@%F{46}%m: %F{201}%(5~|%-1~/.../%2~|%2~) %{$reset_color%}%% %F{51}"
