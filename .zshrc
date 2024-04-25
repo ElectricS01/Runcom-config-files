@@ -43,9 +43,10 @@ alias a="cargo new"
 alias s="cargo add"
 alias e="vim src/main.rs"
 
-alias vpn="./vpn"
-alias v="./vpn-new"
-alias vpns="./vpn-server"
+alias v="~/vpn"
+alias vpn="~/vpn-new"
+alias vpne="~/vpn-e"
+alias vpns="~/vpn-server"
 
 alias mdb="mysql.server start"
 alias gen="bun sequelize migration:generate --name"
@@ -59,3 +60,5 @@ alias ag="./apollo-ios-cli generate"
 
 alias webstorm="open -na "WebStorm.app" --args"
 
+# bun completions
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
