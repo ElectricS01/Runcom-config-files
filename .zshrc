@@ -44,6 +44,7 @@ alias s="cargo add"
 alias e="vim src/main.rs"
 
 alias v="~/vpn"
+alias vo="~/vpn-old"
 alias vpn="~/vpn-new"
 alias vpne="~/vpn-e"
 alias vpns="~/vpn-server"
