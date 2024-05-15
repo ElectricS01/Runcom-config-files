@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export PATH="/usr/local/opt/node@20/bin:$PATH"
 eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
@@ -19,7 +19,7 @@ alias server="ssh root@220.240.178.216"
 alias db="ssh -L 3306:127.0.0.1:3306 root@220.240.178.216"
 
 alias f="bun dev"
-alias u="bun prod"
+alias b="bun prod"
 alias u="bun update"
 alias m="bun install"
 alias l="bun lint"
@@ -36,7 +36,6 @@ alias pb="prettier ./ --write"
 
 alias i="npm i"
 alias nr="npm run"
-alias b="nodemon"
 
 alias q="cargo run"
 alias a="cargo new"
