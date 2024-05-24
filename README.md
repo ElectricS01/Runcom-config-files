@@ -9,3 +9,6 @@ My Zsh and other rc(runcom) config files
 
 `~/library/LaunchAgents/`
 - com.local.KeyRemapping.plist
+
+`~/.config/zed/`
+- settings.json
