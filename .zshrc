@@ -1,4 +1,4 @@
-export PATH="/usr/local/opt/node@20/bin:$PATH"
+export PATH="/opt/homebrew/opt/node/bin:$PATH"
 eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
@@ -41,6 +41,9 @@ alias q="cargo run"
 alias a="cargo new"
 alias s="cargo add"
 alias e="vim src/main.rs"
+
+alias g="clang -o program main.c && ./program"
+alias d="vim main.c"
 
 alias v="~/vpn"
 alias vv="~/vpn-v"

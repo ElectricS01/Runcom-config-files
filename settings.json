@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette o=r from `Zed` application menu.
 {
+  "tab_size": 2,
   "features": {
     "copilot": false
   },
