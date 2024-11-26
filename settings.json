@@ -7,7 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette o=r from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
   "tab_size": 2,
+  "tabs": { "file_icons": true },
   "features": {
     "copilot": false
   },

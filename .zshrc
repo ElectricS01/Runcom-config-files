@@ -14,12 +14,13 @@ PS1="%F{46}%n%F{160}@%F{46}%m: %F{201}%(5~|%-1~/.../%2~|%2~) %{$reset_color%}%% 
 
 preexec () { echo -ne "\e[0m" }
 
-alias sshs="ssh root@220.240.178.216"
-alias server="ssh root@220.240.178.216"
-alias db="ssh -L 3306:127.0.0.1:3306 root@220.240.178.216"
+alias sshs="ssh"
+alias server="ssh"
+alias db="ssh -L 3306:127.0.0.1:3306"
 
 alias f="bun dev"
 alias b="bun prod"
+alias o="bun preview"
 alias u="bun update"
 alias m="bun install"
 alias l="bun lint"
