@@ -1,4 +1,5 @@
 export PATH="/opt/homebrew/opt/node/bin:$PATH"
+export PATH_TO_FX=/opt/javafx-sdk-21.0.8
 eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
@@ -9,6 +10,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 setopt SHARE_HISTORY
+setopt HIST_SAVE_NO_DUPS
 autoload -U colors && colors
 PS1="%F{46}%n%F{160}@%F{46}%m: %F{201}%(5~|%-1~/.../%2~|%2~) %{$reset_color%}%% %F{51}"
 
@@ -64,6 +66,8 @@ alias pwr="sudo powermetrics -i 2000 --samplers cpu_power -a --hide-cpu-duty-cyc
 alias ag="./apollo-ios-cli generate"
 
 alias webstorm="open -na "WebStorm.app" --args"
+alias rdr="open -na "Rider.app" --args"
+alias int="open -na \"IntelliJ IDEA.app\" --args"
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
