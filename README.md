@@ -18,6 +18,12 @@ Commands, My Zsh config, and other rc(runcom) config files
 brew install microsoft-word microsoft-powerpoint microsoft-excel ungoogled-chromium zed@preview whisky
 ```
 
+## Install MiddleClick
+
+```zsh
+brew install middleclick
+```
+
 ### `~/`
 
 - .zshrc
