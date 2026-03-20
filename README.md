@@ -24,6 +24,12 @@ brew install microsoft-word microsoft-powerpoint microsoft-excel ungoogled-chrom
 brew install middleclick
 ```
 
+## Install Command Line Tools
+
+```zsh
+brew install zoxide jq oven-sh/bun/bun
+```
+
 ### `~/`
 
 - .zshrc
