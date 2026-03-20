@@ -1,6 +1,11 @@
-# Runcom config files
+# Mac Config Files & Commands
 
-My Zsh and other rc(runcom) config files
+Commands, My Zsh config, and other rc(runcom) config files
+
+### Install Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 `~/`
 - .zshrc
