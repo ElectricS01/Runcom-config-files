@@ -18,16 +18,21 @@ Commands, My Zsh config, and other rc(runcom) config files
 brew install microsoft-word microsoft-powerpoint microsoft-excel ungoogled-chromium zed@preview whisky
 ```
 
-## Install MiddleClick
+### Install Utilities
 
 ```zsh
-brew install middleclick
+brew install middleclick artginzburg/tap/sudo-touchid
 ```
 
-## Install Command Line Tools
+### Install Command Line Tools
 
 ```zsh
 brew install zoxide jq oven-sh/bun/bun
+```
+
+### Show hidden files by default
+```zsh
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
 ```
 
 ### `~/`
