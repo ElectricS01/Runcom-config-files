@@ -35,6 +35,11 @@ brew install zoxide jq oven-sh/bun/bun
 defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
 ```
 
+### Key repeat
+```zsh
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
 ### `~/`
 
 - .zshrc
