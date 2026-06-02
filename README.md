@@ -27,7 +27,7 @@ brew install middleclick artginzburg/tap/sudo-touchid
 ### Install Command Line Tools
 
 ```zsh
-brew install zoxide jq oven-sh/bun/bun smartmontools
+brew install zoxide jq oven-sh/bun/bun smartmontools mariadb
 ```
 
 ### Show hidden files by default
