@@ -70,7 +70,7 @@ alias webstorm="open -na "WebStorm.app" --args"
 alias rdr="open -na "Rider.app" --args"
 alias int="open -na \"IntelliJ IDEA.app\" --args"
 
-alias deploy_m1n1='cp ~/Github/m1n1/build/m1n1.bin "/Volumes/w/"'
+alias m1n1='make clean && make && cp ~/Github/m1n1/build/m1n1.bin "/Volumes/w/"'
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
