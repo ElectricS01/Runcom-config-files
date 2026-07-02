@@ -1,4 +1,5 @@
 export PATH="/opt/homebrew/opt/node/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH_TO_FX=/opt/javafx-sdk-21.0.8
 eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
@@ -68,6 +69,8 @@ alias ag="./apollo-ios-cli generate"
 alias webstorm="open -na "WebStorm.app" --args"
 alias rdr="open -na "Rider.app" --args"
 alias int="open -na \"IntelliJ IDEA.app\" --args"
+
+alias deploy_m1n1='cp ~/Github/m1n1/build/m1n1.bin "/Volumes/w/"'
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
