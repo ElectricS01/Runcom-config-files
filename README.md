@@ -31,13 +31,21 @@ brew install zoxide jq oven-sh/bun/bun smartmontools mariadb
 ```
 
 ### Show hidden files by default
+
 ```zsh
 defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
 ```
 
 ### Key repeat
+
 ```zsh
 defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
+### Reduce Menu Bar spacing
+
+```zsh
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 12
 ```
 
 ### `~/`
