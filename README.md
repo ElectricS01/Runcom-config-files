@@ -56,6 +56,8 @@ defaults -currentHost write -globalDomain NSStatusItemSpacing -int 12
 
 ### `~/library/LaunchAgents/`
 
+Generated with: https://hidutil-generator.netlify.app/
+
 - com.local.KeyRemapping.plist
 
 ### `~/.config/zed/`
