@@ -7,6 +7,29 @@
 // custom settings, run the `open default settings` command
 // from the command palette o=r from `Zed` application menu.
 {
+  "colorize_brackets": true,
+  "format_on_save": "on",
+  "prettier": {
+    "allowed": true
+  },
+  "default_open_behavior": "new_window",
+  "show_edit_predictions": true,
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "icon_theme": "Catppuccin Latte",
   "agent": {
     "default_model": {
