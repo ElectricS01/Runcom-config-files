@@ -1,6 +1,8 @@
 export PATH="/opt/homebrew/opt/node/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH_TO_FX=/opt/javafx-sdk-21.0.8
+export TEMP="${TMPDIR:-/tmp}"
 eval "$(zoxide init zsh)"
 PROMPT="%F{046}%n %1~ %# %f"
 HISTFILE=~/.zsh_history
@@ -17,9 +19,13 @@ PS1="%F{46}%n%F{160}@%F{46}%m: %F{201}%(5~|%-1~/.../%2~|%2~) %{$reset_color%}%% 
 
 preexec () { echo -ne "\e[0m" }
 
+alias zd="vim ~/.zshrc"
+
 alias sshs="ssh"
 alias server="ssh"
 alias db="ssh -L 3306:127.0.0.1:3306"
+alias aw="~/aws2"
+alias or="~/or"
 
 alias f="bun dev"
 alias b="bun prod"
@@ -27,6 +33,7 @@ alias o="bun preview"
 alias u="bun update"
 alias m="bun install"
 alias l="bun lint"
+alias tc="bun typecheck"
 alias ygen="bun install -y"
 
 alias y="yarn"
@@ -72,5 +79,21 @@ alias int="open -na \"IntelliJ IDEA.app\" --args"
 
 alias m1n1='make clean && make && cp ~/Github/m1n1/build/m1n1.bin "/Volumes/w/"'
 
+alias c="copilot"
+alias cr="copilot --resume"
+alias x="claude"
+
+alias dr="dotnet run"
+alias drr="dotnet run -p:RunAnalyzers=false"
+alias us="dotnet user-secrets list"
+alias ef="dotnet ef migrations add"
+
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+
+alias python=python3
+alias pip=pip3
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
