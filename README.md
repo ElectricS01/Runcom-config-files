@@ -53,6 +53,7 @@ defaults -currentHost write -globalDomain NSStatusItemSpacing -int 12
 - .zshrc
 - .vimrc
 - .gitconfig
+- toggle-globalprotect-background
 
 ### `~/library/LaunchAgents/`
 

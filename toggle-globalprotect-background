@@ -1,0 +1,14 @@
+#!/bin/zsh
+label="com.paloaltonetworks.gp.pangpa"
+domain="gui/$(id -u)"
+plist="/Library/LaunchAgents/$label.plist"
+
+if launchctl print "$domain/$label" &>/dev/null; then
+  launchctl bootout "$domain/$label"
+  launchctl disable "$domain/$label"
+  echo "GlobalProtect background activity: OFF"
+else
+  launchctl enable "$domain/$label"
+  launchctl bootstrap "$domain" "$plist"
+  echo "GlobalProtect background activity: ON"
+fi
