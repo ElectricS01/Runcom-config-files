@@ -64,3 +64,7 @@ Generated with: https://hidutil-generator.netlify.app/
 ### `~/.config/zed/`
 
 - settings.json
+
+### `~/.config/powershell/`
+
+- profile.ps1
