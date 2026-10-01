@@ -35,7 +35,7 @@ alias u="bun update"
 alias m="bun install"
 alias l="bun lint"
 alias tc="bun typecheck"
-alias to="bun test-only"
+alias to="bun --bun test-only"
 alias ygen="bun install -y"
 
 alias y="yarn"
@@ -95,7 +95,8 @@ alias dbb="dotnet build -r osx-arm64 --no-restore --nologo -p:RunAnalyzers=false
 alias us="dotnet user-secrets list"
 alias uss="dotnet user-secrets set"
 alias ef="dotnet ef migrations add"
-alias edi="git update-index --skip-worktree .editorconfig"
+alias dt="dotnet test -r osx-arm64 -p:RunAnalyzers=false"
+alias edih="git update-index --skip-worktree .editorconfig"
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
@@ -106,3 +107,7 @@ alias pip=pip3
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# opam configuration
+[[ ! -r '/Users/electrics01/.opam/opam-init/init.zsh' ]] || source '/Users/electrics01/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null; true

@@ -15,7 +15,7 @@ Commands, My Zsh config, and other rc(runcom) config files
 ### Install Apps
 
 ```zsh
-brew install microsoft-word microsoft-powerpoint microsoft-excel ungoogled-chromium zed@preview whisky
+brew install microsoft-word microsoft-powerpoint microsoft-excel helium-browser zed@preview
 ```
 
 ### Install Utilities
@@ -27,7 +27,13 @@ brew install middleclick artginzburg/tap/sudo-touchid
 ### Install Command Line Tools
 
 ```zsh
-brew install zoxide jq oven-sh/bun/bun smartmontools mariadb
+brew install zoxide jq oven-sh/bun/bun smartmontools mariadb node
+```
+
+### Configure Node
+
+```zsh
+npm config set node-options=--no-experimental-webstorage
 ```
 
 ### Show hidden files by default
